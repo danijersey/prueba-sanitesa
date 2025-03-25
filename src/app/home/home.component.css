@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&family=Outfit:wght@500&display=swap');
+
+/* ... otros estilos permanecen igual ... */
+  /* Estilos Generales */
+button{
+    all: unset;
+}
+a{
+    text-decoration: none;
+    color: #404040;
+}
+select{
+    background: transparent;
+    border: none;
+}
+                     /* Estilos Generales */
+                        /* tollbarsuperior */
+
+.toolbar-superior {
+    width: 1440px;
+    height: 53px;
+    background: #ffffff;
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.15), inset 0px -0.5px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    position: relative;
+  }
+  
+  /* Traffic Lights (Botones Cerrar, Minimizar, Maximizar) */
+  .traffic-lights {
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    left: 21px;
+    top: 20px;
+  }
+  
+  .light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+    background: #ee6a5f;
+    border: 0.5px solid #ce5347;
+    box-shadow: inset 0px 0px 6px #ec6d62;
+  }
+  
+  .minimize {
+    background: #f5bd4f;
+    border: 0.5px solid #d6a243;
+    box-shadow: inset 0px 0px 6px #f5c451;
+  }
+  
+  .fullscreen {
+    background: #61c454;
+    border: 0.5px solid #58a942;
+    box-shadow: inset 0px 0px 6px #68cc58;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 28px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 6px;
+  }
+  
+  .lock-icon {
+    color: #9e9e9e;
+    font-size: 14px;
+  }
+  
+  .search-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #4c4c4c;
+  }
+  
+  /* Grupo de botones de la toolbar */
+  .toolbar-superior-group, .extra-toolbar-superior-group {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 12px;
+  }
+  
+  .toolbar-group {
+    right: 12px;
+  }
+  
+  .extra-toolbar-group {
+    left: 134px;
+  }
+  
+  /* Botones de la toolbar */
+  .toolbar-superior-item {
+    width: 33px;
+    height: 28px;
+    border-radius: 6px;
+    background: #737373;
+  }
+  
+                                    /* toollbarsuperior */
+                                        /* headerrrr */
+                                        
+                                        /* headerrr */
+
+
+
+
+                     /* Estilos Menu Superior */
+.menu-superior{
+  
+    position: sticky;
+    display: flex;
+    width: 100%;
+    height: 18%;
+    padding: 1% 0% 1% 0%;
+    /* border-bottom: solid; */
+    box-shadow: 0px 1px 2px -1px #121A2B0F;
+
+    box-shadow: 0px 1px 2px 0px #121A2B1A;
+     ;
+   
+}
+.menu-superior .menu-logo{
+    margin-left: 5%;
+    margin-right: 12%;
+    object-fit: cover
+}
+.menu-superior .menu-boton-central{
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20%;
+}
+.menu-superior .menu-boton-central a{
+   font-size: 16px;
+   padding: 8%;
+}
+.menu-boton-final{
+    display: flex;
+}
+.menu-boton-final .currencySelector{
+
+    margin-right: 8%;
+}
+.menu-boton-final .corazon{
+    margin-right: 8%;
+}
+.menu-boton-final .unete{
+    width: 185px;
+    height: 40px;
+    margin-top: -4%;
+    white-space: nowrap;
+    margin-right: 8%;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    border: solid;
+    border-width: 1px;
+    gap: 6px;
+    border-radius: 99px;
+    border-color: #003D42;
+}
+
+.unete {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 6px;
+    
+    width: 185px;
+    height: 40px;
+    
+    border: 1px solid #003D42;
+    border-radius: 99px;
+    background-color: transparent;
+    
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #003D42; /* Ajusta según el color en Figma */
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.unete:hover {
+    background-color: rgba(0, 61, 66, 0.1);
+}
+
+/* Active Effect */
+.unete:active {
+    background-color: rgba(0, 61, 66, 0.2);
+}
+
+.menu-boton-final .unete{
+    color: #003D42;
+  
+}
+
+
+
+/* Estilos para el botón de hamburguesa */
+.menu-boton-hamburguesa {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .menu-boton-hamburguesa .line {
+    width: 100%;
+    height: 3px;
+    background-color: #141B34;
+    border-radius: 5px;
+  }
+  
+  /* Menú desplegable */
+  .menu {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+
+
+                     /* Estilos Menu Superior */
+
+                     /* seccion video */                    
+.seccion-segunda .video {
+    
+    width: 1216px;
+height: 418px;
+margin: 64px 112px 0 112px; /* top right bottom left */
+}
+.seccion-segunda .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+    clip-path: inset(0 round 32px)
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 99px;
+    padding: 0 20px;
+    height: 80px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-field {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 60px;
+    cursor: pointer;
+    
+    &:hover {
+      background: #FBF6EB;
+      border-radius: 30px;
+    }
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &.location-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23505D5A'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E");
+    }
+    
+    &.calendar-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23505D5A'%3E%3Cpath d='M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z'/%3E%3C/svg%3E");
+    }
+    
+    &.guests-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23505D5A'%3E%3Cpath d='M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z'/%3E%3C/svg%3E");
+    }
+  }
+  
+  .field-text {
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    color: #505D5A;
+    white-space: nowrap;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 40px;
+    background-color: #BACDCC;
+    margin: 0 10px;
+  }
+  
+  .search-button {
+    background: #7EC2B5;
+    color: white;
+    border: none;
+    border-radius: 99px;
+    padding: 12px 24px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background 0.3s;
+    
+    &:hover {
+      background: #6db0a3;
+    }
+  }
+                        /* seccion video */   
+
+                            /* seccion tercera */   
+                            .discovery-container {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 0;
+                                gap: 24px;
+                                width: 1216px;
+                                max-width: 100%;
+                                margin: 0 auto;
+                              }
+                              
+                              .discovery-header {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 0;
+                                width: 100%;
+                              }
+                              
+                              .discovery-title {
+                                font-family: 'Lexend', sans-serif;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 40px;
+                                line-height: 49px;
+                                letter-spacing: -0.02em;
+                                color: #003D42;
+                                margin: 0;
+                                text-align: center;
+                                max-width: 702px;
+                              }
+                              
+                              .discovery-subtitle {
+                                font-family: 'Outfit', sans-serif;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: #4B5563;
+                                margin: 16px 0 0;
+                                text-align: center;
+                                max-width: 766px;
+                              }
+                              
+                              .tabs-container {
+                                width: 100%;
+                                border-bottom: 1px solid #E5E7EB;
+                              }
+                              
+                              .tabs {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-start;
+                                padding: 0;
+                                gap: 16px;
+                                width: 100%;
+                              }
+                              
+                              .tab {
+                                box-sizing: border-box;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 12px 14px;
+                                gap: 8px;
+                                height: 44px;
+                                cursor: pointer;
+                                position: relative;
+                              }
+                              
+                              .tab-text {
+                                font-family: 'Lexend', sans-serif;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #6B7280;
+                              }
+                              
+                              .tab.active {
+                                .tab-text {
+                                  color: #368F8B;
+                                }
+                                
+                                &::after {
+                                  content: '';
+                                  position: absolute;
+                                  bottom: -1px;
+                                  left: 0;
+                                  right: 0;
+                                  height: 2px;
+                                  background: #368F8B;
+                                }
+                              }
+                              
+                              .tab:hover:not(.active) {
+                                .tab-text {
+                                  color: #4B5563;
+                                }
+                              }
+
+                              /* otra parte */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Outfit:wght@400;500&display=swap');
+
+.carousel-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 32px;
+  padding: 0 16px;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+}
+
+.villa-card {
+  width: 373px;
+  height: 406px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.villa-image {
+  width: 100%;
+  height: 261px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.info-icons {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  background: #F8F8F8;
+  border: 1px solid #F8F5EF;
+  border-radius: 99px;
+  padding: 8px 12px;
+  z-index: 2;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #E9EAF0;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  padding: 8px 12px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.count {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #4D4D4D;
+}
+
+.villa-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.villa-title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #223234;
+  margin: 0;
+  
+  &:first-child {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.villa-location {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #587E82;
+  margin: 0;
+  
+  &:first-child {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.villa-price {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #368F8B;
+  margin: 0;
+}
+                              /* seccion tercera */   
+                              @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Outfit:wght@400;500&display=swap');
+
+.carousel-container {
+  width: 100%;
+  position: relative;
+  padding: 20px 20px; /* Espacio para las flechas */
+  margin-bottom: 4%;
+}
+
+.carousel {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; /* IE/Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+}
+
+.villa-card {
+  width: 373px;
+  height: 406px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+/* ... (otros estilos se mantienen igual) ... */
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    background: #F8F8F8;
+  }
+  
+  &.left-arrow {
+    left: 10px;
+  }
+  
+  &.right-arrow {
+    right: 10px;
+  }
+  
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.alojamientos {
+    margin-left: 38%;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:#489b98;  /* Fondo transparente */
+    color: white;                /* Color coral/rojo suave (como Airbnb) */
+    text-decoration: none;
+    border: 1px solid #368F8B;     /* Borde del mismo color */
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    border-radius: 99px;
+}
+.alojamientos:hover {
+    background-color: #368F8B;      /* Fondo coral al pasar el mouse */
+    color: white;
+}

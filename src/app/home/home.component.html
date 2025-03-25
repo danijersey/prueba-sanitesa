@@ -1,0 +1,295 @@
+<div class="toolbar-superior">
+    <!-- Traffic Lights (Cerrar, Minimizar, Maximizar) -->
+    <div class="traffic-lights">
+      <div class="light close"></div>
+      <div class="light minimize"></div>
+      <div class="light fullscreen"></div>
+    </div>
+  
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <span class="lock-icon">🔒</span>
+      <span class="search-text">Buscar o ingresar dirección</span>
+    </div>
+  
+    <!-- Botones de navegación -->
+    <div class="toolbar-group">
+      <div class="toolbar-item back"></div>
+      <div class="toolbar-item forward"></div>
+      <div class="toolbar-item reload"></div>
+      <div class="toolbar-item share"></div>
+    </div>
+  
+    <!-- Otros botones -->
+    <div class="extra-toolbar-group">
+      <div class="toolbar-item tab-overview"></div>
+      <div class="toolbar-item sidebar"></div>
+    </div>
+  </div>
+
+
+
+  
+<div class="menu-superior">
+    
+    <div class="menu-logo">
+        <img src="../../assets/img/logo.png" alt="Logo">
+
+
+    </div>
+    <div class="menu-boton-central">
+            <a href="#">Alojamientos</a>
+            <a href="#">Destinos</a>
+            <a href="#">Contacto</a>
+    </div>
+    <div class="menu-boton-final">
+        <div class="currencySelector">
+             <select [(ngModel)]="selectedCurrency" class="currency-dropdown">
+                <option value="ES-€">ES-€</option>
+                <option value="USD-$">USD-$</option>
+                <option value="MXN-₱">MXN-₱</option>
+                <option value="GBP-£">GBP-£</option>
+              </select>
+        </div>
+        <div class="corazon">
+                <button>
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.2438 2.49415C15.5622 0.849229 13.2216 1.51211 11.8156 2.56801C11.2391 3.00096 10.9508 3.21743 10.7812 3.21743C10.6117 3.21743 10.3234 3.00096 9.7469 2.56801C8.34087 1.51211 6.00034 0.849229 3.31869 2.49415C-0.200681 4.65294 -0.997029 11.7749 7.12078 17.7834C8.66697 18.9278 9.44006 19.5 10.7812 19.5C12.1224 19.5 12.8955 18.9278 14.4417 17.7834C22.5595 11.7749 21.7632 4.65294 18.2438 2.49415Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        
+                </button>
+        </div>
+        <div class="unete">
+            <a href="#"> Unete a la comunidad</a>
+        </div>
+
+        <div class="menu-container">
+            <!-- Botón de hamburguesa -->
+            <div class="menu-boton-hamburguesa" (click)="toggleMenu()">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          
+            <!-- Menú desplegable que aparece cuando se hace clic en el botón -->
+            <div *ngIf="menuActive" class="menu">
+              <p>¡Hola Mundo!</p>
+            </div>
+          </div>
+          
+    </div>
+ 
+</div>
+        <!-- menu superior -->
+         <!-- zona video -->
+<div class="seccion-segunda">
+        <div class="video">
+            <video src="../../assets/videos/portada.mp4" autoplay loop muted ></video>
+        </div>
+     
+        
+        <div class="search-container">
+            <div class="search-box">
+              <div class="search-field">
+                <div class="icon location-icon"></div>
+                <span class="field-text">Selecciona o escribe un destino</span>
+              </div>
+              
+              <div class="divider"></div>
+              
+              <div class="search-field">
+                <div class="icon calendar-icon"></div>
+                <span class="field-text">Check in/out</span>
+              </div>
+              
+              <div class="divider"></div>
+              
+              <div class="search-field">
+                <div class="icon guests-icon"></div>
+                <span class="field-text">Huéspedes</span>
+              </div>
+              
+              <button class="search-button">
+                Buscar
+              </button>
+            </div>
+          </div>
+
+
+</div>
+
+<div class="seccion-tres">
+
+    <div class="discovery-container">
+        <div class="discovery-header">
+          <h1 class="discovery-title">Descubre tu nueva estancia favorita</h1>
+          <p class="discovery-subtitle">Echa un vistazo a nuestra selección de casas de vacaciones especialmente seleccionadas para ti.</p>
+        </div>
+        
+        <div class="tabs-container">
+          <div class="tabs">
+            <div class="tab active">
+              <span class="tab-text">Vitea</span>
+            </div>
+            <div class="tab">
+              <span class="tab-text">Apartamentos</span>
+            </div>
+            <div class="tab">
+              <span class="tab-text">Chalés</span>
+            </div>
+            <div class="tab">
+              <span class="tab-text">Casa rural</span>
+            </div>
+            <div class="tab">
+              <span class="tab-text">Estudio</span>
+            </div>
+          </div>
+          <div class="tab-indicator"></div>
+        </div>
+      </div>
+
+      <!-- otra seccion -->
+
+      <div class="carousel-container">
+        <button class="nav-arrow left-arrow" (click)="scrollLeft()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="#368F8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        
+        <div class="carousel" #carousel>
+          <!-- Villa 1 -->
+          <div class="villa-card">
+            <div class="villa-image">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Villa Las Calderas">
+              <div class="info-icons">
+                <div class="icon-box">
+                  <span class="icon">👤</span>
+                  <span class="count">4</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛏️</span>
+                  <span class="count">2</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🚪</span>
+                  <span class="count">3</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛁</span>
+                  <span class="count">2</span>
+                </div>
+              </div>
+            </div>
+            <div class="villa-info">
+              <h3 class="villa-title">Villa Las Calderas</h3>
+              <p class="villa-location">Corralejo</p>
+              <p class="villa-price">170€/noche</p>
+            </div>
+          </div>
+        
+          <!-- Villa 2 -->
+          <div class="villa-card">
+            <div class="villa-image">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Salobre Villa">
+              <div class="info-icons">
+                <div class="icon-box">
+                  <span class="icon">👤</span>
+                  <span class="count">6</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛏️</span>
+                  <span class="count">3</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🚪</span>
+                  <span class="count">4</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛁</span>
+                  <span class="count">3</span>
+                </div>
+              </div>
+            </div>
+            <div class="villa-info">
+              <h3 class="villa-title">Salobre Villa</h3>
+              <p class="villa-location">San Bartolomé de Tirajana</p>
+              <p class="villa-price">185€/noche</p>
+            </div>
+          </div>
+        
+          <!-- Villa 3 -->
+          <div class="villa-card">
+            <div class="villa-image">
+              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Oasis de Lujo">
+              <div class="info-icons">
+                <div class="icon-box">
+                  <span class="icon">👤</span>
+                  <span class="count">8</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛏️</span>
+                  <span class="count">4</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🚪</span>
+                  <span class="count">5</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛁</span>
+                  <span class="count">4</span>
+                </div>
+              </div>
+            </div>
+            <div class="villa-info">
+              <h3 class="villa-title">Impresionante Oasis de Lujo</h3>
+              <p class="villa-location">San Bartolomé de Tirajana</p>
+              <p class="villa-price">1.400€/noche</p>
+            </div>
+          </div>
+        
+          <!-- Villa 4 -->
+          <div class="villa-card">
+            <div class="villa-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Villa Corrales">
+              <div class="info-icons">
+                <div class="icon-box">
+                  <span class="icon">👤</span>
+                  <span class="count">4</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛏️</span>
+                  <span class="count">2</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🚪</span>
+                  <span class="count">2</span>
+                </div>
+                <div class="icon-box">
+                  <span class="icon">🛁</span>
+                  <span class="count">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="villa-info">
+              <h3 class="villa-title">Villa Corrales</h3>
+              <p class="villa-location">Corralejo</p>
+              <p class="villa-price">170€/noche</p>
+            </div>
+          </div>
+        </div>
+      
+        <button class="nav-arrow right-arrow" (click)="scrollRight()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="#368F8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <a href="#" class="alojamientos">Ver todos los alojamientos</a>
+</div>
+
+
+
+
+  
