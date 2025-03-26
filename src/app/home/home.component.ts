@@ -12,7 +12,19 @@ import { FormsModule } from '@angular/forms';
 export class HomeComponent {
   selectedCurrency: string = 'ES-€'; 
   menuActive: boolean = false;
+  numero:number=1
   
+  disminuirNumero(){
+    if(this.numero>1){
+    this.numero=this.numero-1
+  }
+  }
+
+  aumentarNumero(){
+    if(this.numero<10){
+    this.numero=this.numero+1
+  }
+  }
 
   // Función que cambia el estado del menú
   toggleMenu() {
@@ -23,14 +35,14 @@ export class HomeComponent {
 
   scrollLeft() {
     this.carousel.nativeElement.scrollBy({
-      left: -400,
+      left: -600,
       behavior: 'smooth'
     });
   }
 
   scrollRight() {
     this.carousel.nativeElement.scrollBy({
-      left: 400,
+      left: 6000, // Aumenté de 3000 a 6000 (el doble de desplazamiento)
       behavior: 'smooth'
     });
   }
