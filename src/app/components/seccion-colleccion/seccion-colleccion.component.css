@@ -1,0 +1,97 @@
+.collection-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: 'Lexend', sans-serif;
+    text-align: left; /* Cambiado de center a left */
+  }
+  
+  .collection-container {
+    width: 100%;
+  }
+  
+  .collection-header {
+    text-align: left; /* Alineación izquierda */
+    margin-bottom: 48px;
+  }
+  
+  .collection-header h1 {
+    font-size: 40px;
+    color: #003D42;
+    margin-bottom: 16px;
+    white-space: nowrap; /* Evita salto de línea */
+  }
+  
+  .collection-header p {
+    font-size: 18px;
+    color: #4B5563;
+    margin: 0; /* Elimina márgenes automáticos */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    white-space: nowrap; /* Evita salto de línea */
+    overflow: hidden; /* Oculta texto que desborde */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+  }
+  
+  /* Mantengo el resto de estilos igual */
+  .collection-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* Cambiado de center a flex-start */
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .collection-item {
+    width: 280px;
+    height: 380px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .item-name {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  }
+  
+  .collection-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    border-radius: 16px;
+    z-index: 1;
+  }
+  
+  .collection-button {
+    background: #7EC2B5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block; /* Para que ocupe su propia línea */
+    margin-top: 40px;
+    margin-left: auto; /* Centrar a la izquierda */
+    margin-right: auto; /* Centrar a la derecha */
+  }
+  
+  
+  .collection-button:hover {
+    background: #6BAEA1;
+  }
+  

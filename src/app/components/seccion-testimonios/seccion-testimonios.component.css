@@ -1,0 +1,193 @@
+.testimonios-section {
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    
+    background: #FBF6EB;
+  }
+  
+  .testimonios-header {
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  
+  
+  .testimonios-header h1 {
+    margin-left: 7%;
+    font-size: 40px;
+    text-align: start;
+    color: #003D42;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  .testimonios-header p {
+    margin-left: 7% !important;
+    text-align: start; /* Alinea el párrafo a la izquierda */
+    font-size: 18px;
+    color: #4B5563;
+    max-width: 700px;
+    line-height: 1.5;
+    margin: 0; /* Elimina el centrado con margin: 0 auto */
+    white-space: nowrap;
+  }
+  
+  /* Filtros */
+  .filtros {
+    margin-left: 6%;
+    display: flex;
+    text-align: start; /* Alinea el párrafo a la izquierda */
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .filtro {
+    padding: 8px 16px;
+  
+    background: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    position: relative; /* Necesario para colocar la línea abajo */
+  }
+  
+  /* Filtro activo */
+  .filtro.activo {
+    color: #368F8B;
+    border-bottom: 2px solid #368F8B; /* Línea debajo del filtro activo */
+  }
+  
+  
+  .badge {
+    
+    background: #E5E7EB;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+  
+  /* Tarjetas de testimonios */
+  .testimonios-grid {
+    display: grid;
+    margin-left: 6%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  
+  .testimonio-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .usuario-fecha {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  
+  .usuario-fecha h3 {
+    font-size: 18px;
+    color: #003D42;
+    margin-bottom: 4px;
+  }
+  
+  .usuario-fecha p {
+    font-size: 14px;
+    color: #6B7280;
+  }
+  
+  .contenido p {
+    color: #4B5563;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+  
+  .footer-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .leer-mas {
+    color: #368F8B;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .fuente {
+    font-size: 12px;
+    color: #6B7280;
+    background: #F3F4F6;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .arrows-container {
+    display: flex;
+    margin-left: 46%;
+    margin-top: 5%;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    padding: 0px;
+    gap: 16px; /* Espacio entre las flechas */
+    width: 88px;
+    height: 36px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .carousel-icon {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 50%;
+    cursor: pointer; /* Asegura que sea clickeable */
+    transition: background 0.3s, border 0.3s;
+  }
+  
+  /* Estilo al pasar el mouse (hover) sobre las flechas */
+  .carousel-icon:hover {
+    background: #F3F4F6;
+    border-color: #003D42; 
+  }
+  .chevron-left {
+    font-size: 16px;
+    color: #003D42;
+  }
+  
+
+  .chevron-right {
+    font-size: 16px;
+    color: #003D42;
+  }
+  
+  .star-rating {
+    font-size: 30px; /* Ajusta el tamaño de las estrellas */
+    color: #ccc; /* Color gris para las estrellas vacías */
+  }
+  
+  .star {
+    color: gold; /* Color amarillo para las estrellas */
+    margin-right: 5px; /* Espaciado entre las estrellas */
+  }
+  
+  

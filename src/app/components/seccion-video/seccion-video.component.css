@@ -1,0 +1,177 @@
+button{
+    all: unset;
+}
+a{
+    text-decoration: none;
+    color: #404040;
+}
+select{
+    background: transparent;
+    border: none;
+}
+
+     /* seccion video */                    
+     .seccion-segunda .video-container {
+        position: relative;
+        width: 1216px;
+        height: 418px;
+        margin: 64px 112px 0 140px;
+    }
+    
+    .seccion-segunda .video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .seccion-segunda .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 32px;
+        clip-path: inset(0 round 32px);
+    }
+    
+    /* Nueva capa de degradado azul claro */
+    .seccion-segunda .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          to top, 
+          rgba(200, 255, 251, 0.763),  /* Azul clarísimo (abajo) */
+          rgba(255, 255, 255, 0)      /* Transparencia total (arriba) */
+      );
+      border-radius: 32px;
+      z-index: 1;
+  }
+    
+    /* Estilos para el texto */
+    .seccion-segunda .video-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        z-index: 2;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 32px;
+    }
+    
+    .seccion-segunda .video-content h1 {
+        font-size:60px;
+        margin-bottom: 16px;
+     
+    }
+    
+    .seccion-segunda .video-content p {
+        font-size: 22px;
+
+        max-width: 80%;
+    }
+
+.search-container {
+display: flex;
+margin-top: -80px;
+justify-content: center;
+padding: 20px;
+position: relative; /* o 'absolute' dependiendo de tu layout */
+z-index: 10; /* Un valor mayor que los elementos que quieres que queden detrás */
+
+
+}
+
+.search-box {
+display: flex;
+align-items: center;
+background: #FBF6EB;
+border-radius: 99px;
+border: solid;
+border-color: white;
+border-width: 12px;
+padding: 0 20px;
+height: 80px;
+/* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.search-field {
+display: flex;
+align-items: center;
+padding: 0 24px;
+height: 60px;
+cursor: pointer;
+
+&:hover {
+background: #FBF6EB;
+border-radius: 30px;
+}
+}
+
+.icon {
+width: 20px;
+height: 20px;
+margin-right: 12px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
+.field-text {
+font-family: 'Lexend', sans-serif;
+font-size: 16px;
+color: #505D5A;
+white-space: nowrap;
+}
+.field-text-huespedes {
+font-family: 'Lexend', sans-serif;
+font-size: 16px;
+
+white-space: nowrap;
+}
+.field-text-cantidad{
+font-family: 'Lexend', sans-serif;
+font-size: 16px;
+
+white-space: nowrap;
+}
+.button-huespedes {
+padding: 15px;
+
+cursor: pointer;
+}
+
+.divider {
+width: 1px;
+height: 40px;
+background-color: #BACDCC;
+margin: 0 10px;
+}
+
+.search-button {
+background: #7EC2B5;
+color: white;
+border: none;
+border-radius: 99px;
+padding: 12px 24px;
+font-family: 'Lexend', sans-serif;
+font-weight: 500;
+font-size: 16px;
+cursor: pointer;
+margin-left: 12px;
+transition: background 0.3s;
+
+&:hover {
+background: #6db0a3;
+}
+}

@@ -1,0 +1,47 @@
+<div class="menu-superior">
+    <div class="menu-logo">
+        <img src="../../assets/img/logo.png" alt="Logo">
+    </div>
+
+    <div class="menu-boton-central">
+            <a href="#">Alojamientos</a>
+            <a href="#">Destinos</a>
+            <a href="#">Contacto</a>
+    </div>
+
+    <div class="menu-boton-final">
+        <div class="currencySelector">
+             <select [(ngModel)]="selectedCurrency" class="currency-dropdown">
+                <option value="ES-€">ES-€</option>
+                <option value="USD-$">USD-$</option>
+                <option value="MXN-₱">MXN-₱</option>
+                <option value="GBP-£">GBP-£</option>
+              </select>
+        </div>
+        <div class="corazon">
+                <button>
+                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.2438 2.49415C15.5622 0.849229 13.2216 1.51211 11.8156 2.56801C11.2391 3.00096 10.9508 3.21743 10.7812 3.21743C10.6117 3.21743 10.3234 3.00096 9.7469 2.56801C8.34087 1.51211 6.00034 0.849229 3.31869 2.49415C-0.200681 4.65294 -0.997029 11.7749 7.12078 17.7834C8.66697 18.9278 9.44006 19.5 10.7812 19.5C12.1224 19.5 12.8955 18.9278 14.4417 17.7834C22.5595 11.7749 21.7632 4.65294 18.2438 2.49415Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg> 
+                </button>
+        </div>
+
+        <div class="unete">
+            <a href="#"> Unete a la comunidad</a>
+        </div>
+        <!-- Botón de hamburguesa -->
+        <div class="menu-container">
+            <div class="menu-boton-hamburguesa" (click)="toggleMenu()">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+        </div>
+          
+            <!-- Menú desplegable que aparece cuando se hace clic en el botón -->
+            <div *ngIf="menuActive" class="menu">
+              <p>¡Hola Mundo!</p>
+            </div>
+          </div>
+    </div>
+ 
+</div>

@@ -1,0 +1,452 @@
+button{
+    all: unset;
+}
+a{
+    text-decoration: none;
+    color: #404040;
+}
+select{
+    background: transparent;
+    border: none;
+}
+
+.discovery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 1216px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  
+  .discovery-header {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap; /* Evita el salto de línea */
+    padding: 0;
+    width: 100%;
+  }
+  
+  .discovery-title {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    color: #003D42;
+    margin: 0;
+    text-align: center;
+    max-width: 702px;
+  }
+  
+  .discovery-subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4B5563;
+    margin: 16px 0 0;
+    text-align: center;
+    max-width: 766px;
+  }
+  
+  .tabs-container {
+    width: 100%;
+  
+    border-bottom: 1px solid #E5E7EB;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  
+    padding: 0;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .tab {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 14px;
+    gap: 8px;
+    height: 44px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .tab-text {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+  }
+  
+  .tab.active {
+    .tab-text {
+      color: #368F8B;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #368F8B;
+    }
+  }
+  
+  .tab:hover:not(.active) {
+    .tab-text {
+      color: #4B5563;
+    }
+  }
+
+.carousel-container {
+width: 100%;
+padding: 0px 0;
+margin-left: 6%;
+margin-top: 3%;
+
+overflow-x: auto;
+overflow-y: visible; /* Permite que los iconos se muestren fuera verticalmente */
+
+}
+.nav-arrow.left-arrow {
+top: 190px!important;
+left: -20px!important;
+
+}
+.nav-arrow.right-arrow {
+right: 237px!important;
+top: 190px!important;
+}
+.carousel {
+display: flex;
+gap: 32px;
+padding: 0 16px;
+overflow-x: auto;
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none; /* IE/Edge */
+
+&::-webkit-scrollbar {
+display: none; /* Chrome/Safari */
+}
+}
+
+.villa-card {
+width: 373px; /* Mantén el ancho fijo */
+height: 406px;
+flex-shrink: 0;
+}
+
+.villa-image {
+width: 100%;
+height: 261px;
+border-radius: 16px;
+
+
+
+
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+}
+
+.info-icons {
+position: absolute;
+
+bottom: -26px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 20px;
+background: #F8F8F8;
+border: 1px solid #F8F5EF;
+border-radius: 99px;
+padding: 8px 12px;
+z-index: 9999;
+}
+
+.icon-box {
+
+display: flex;
+align-items: center;
+gap: 8px;
+background: #E9EAF0;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+border-radius: 18px;
+padding: 8px 12px;
+
+}
+
+.icon {
+
+width: 16px;
+height: 16px;
+}
+
+.count {
+font-family: 'Lexend', sans-serif;
+font-weight: 700;
+font-size: 14px;
+color: #4D4D4D;
+}
+
+
+.villa-info {
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding-top: 20px;
+}
+
+.villa-title {
+font-family: 'Lexend', sans-serif;
+font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #223234;
+margin: 0;
+white-space: nowrap;       /* Evita el salto de línea */
+overflow: hidden;         /* Oculta el texto que sobresale */
+text-overflow: ellipsis;  /* Añade "..." al final */
+max-width: 100%;          /* Asegura que respete el ancho del contenedor */
+
+&:first-child {
+font-size: 28px;
+font-weight: 700;
+}
+}
+
+.villa-location {
+font-family: 'Lexend', sans-serif;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.02em;
+color: #587E82;
+margin: 0;
+
+&:first-child {
+font-size: 20px;
+font-weight: 600;
+}
+}
+
+.villa-price {
+font-family: 'Outfit', sans-serif;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #368F8B;
+margin: 0;
+}
+
+.carousel-container {
+width: 100%;
+position: relative;
+
+padding: 20px 20px; /* Espacio para las flechas */
+margin-bottom: 4%;
+}
+
+.carousel-container {
+width: 100%;
+position: relative;
+padding: 20px 20px;
+margin-bottom: 4%;
+}
+
+.carousel {
+display: flex;
+gap: 32px;
+overflow-x: auto;
+scroll-behavior: smooth;
+scrollbar-width: none;
+-ms-overflow-style: none;
+padding: 0 16px;
+}
+
+.carousel::-webkit-scrollbar {
+display: none;
+}
+
+.villa-card {
+width: 373px;
+height: 406px;
+flex-shrink: 0;
+display: flex;
+position: relative; 
+flex-direction: column;
+gap: 46px;
+}
+
+.villa-image {
+width: 100%;
+height: 261px;
+border-radius: 16px;
+position: relative;
+overflow: hidden;
+}
+
+.villa-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* ESTILOS CORREGIDOS PARA LOS ICONOS */
+.info-icons {
+position: relative;
+margin-top: -90px;
+left: 50%;
+width: 340px;
+display: flex;
+gap: 12px;
+background: rgba(255, 255, 255, 0.95);
+border: 1px;
+border-radius: 499px;
+padding: 5px 0px;
+justify-content: center;
+z-index: 9999; /* Valor mucho más alto */
+
+}
+
+.icon-box {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+background: rgba(233, 234, 240, 0.9);
+border-radius: 18px;
+padding: 8px 12px;
+min-width: 50px;
+}
+
+/* ESTILOS ESPECÍFICOS PARA LOS ICONOS (EMOJIS) */
+
+
+.icon-box .count {
+font-family: 'Lexend', sans-serif;
+font-weight: 600;
+font-size: 14px;
+color: #4D4D4D;
+line-height: 1;
+}
+
+.villa-info {
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding-top: 20px;
+}
+
+.villa-title {
+font-family: 'Lexend', sans-serif;
+font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #223234;
+margin: 0;
+}
+
+.villa-location {
+font-family: 'Lexend', sans-serif;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.02em;
+color: #587E82;
+margin: 0;
+}
+
+.villa-price {
+font-family: 'Outfit', sans-serif;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #368F8B;
+margin: 0;
+}
+
+/* ... (otros estilos se mantienen igual) ... */
+
+.nav-arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 48px;
+height: 48px;
+background: white;
+border: 1px solid #E5E7EB;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+z-index: 2;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+&:hover {
+background: #F8F8F8;
+}
+
+&.left-arrow {
+left: 10px;
+}
+
+&.right-arrow {
+right: 10px;
+}
+
+svg {
+width: 24px;
+height: 24px;
+}
+}
+.alojamientos {
+margin-left: 41%;
+display: inline-block;
+padding: 12px 24px;
+background-color:#68c0bb;  /* Fondo transparente */
+color: white;                /* Color coral/rojo suave (como Airbnb) */
+text-decoration: none;
+border: 1px solid #73d4cf;     /* Borde del mismo color */
+border-radius: 8px;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 19px;
+transition: all 0.3s ease;
+border-radius: 99px;
+}
+.alojamientos:hover {
+background-color:#489b98;      /* Fondo coral al pasar el mouse */
+color: white;
+}
+
+.redireccion-alojamientos{
+margin-top: 4%;
+padding-bottom: 4%;
+}

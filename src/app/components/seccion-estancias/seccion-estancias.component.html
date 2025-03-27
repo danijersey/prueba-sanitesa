@@ -1,0 +1,398 @@
+
+
+<div class="discovery-container">
+
+    <!-- Titulo -->
+    <div class="discovery-header">
+      <h1 class="discovery-title">Descubre tu nueva estancia favorita</h1>
+      <p class="discovery-subtitle">Echa un vistazo a nuestra selección de casas de vacaciones especialmente seleccionadas para ti.</p>
+    </div>
+     <!-- Titulo -->
+
+     <!-- botones filtro -->
+    <div class="tabs-container">
+      <div class="tabs">
+        <div class="tab active">
+          <span class="tab-text">Vitea</span>
+        </div>
+        <div class="tab">
+          <span class="tab-text">Apartamentos</span>
+        </div>
+        <div class="tab">
+          <span class="tab-text">Chalés</span>
+        </div>
+        <div class="tab">
+          <span class="tab-text">Casa rural</span>
+        </div>
+        <div class="tab">
+          <span class="tab-text">Estudio</span>
+        </div>
+      </div>
+      <div class="tab-indicator"></div>
+    </div>
+      <!-- botones filtro -->
+  </div>
+
+   <!--seccion carrusel -->
+  <div class="carousel-container">
+    <button class="nav-arrow left-arrow" (click)="scrollLeft()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 18L9 12L15 6" stroke="#368F8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    
+    <div class="carousel" #carousel>
+      <!-- Villa 1 -->
+      <div class="villa-card">
+        <div class="villa-image">
+          
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Villa Las Calderas">
+        
+        </div>
+      <!-- Villa 1 (corregido) -->
+<div class="info-icons">
+<!-- Icono 1 -->
+<div class="icon-box">
+<span class="icon">
+  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.88505 10.3211C3.94187 10.8827 1.46891 12.0294 2.97511 13.4644C3.71087 14.1654 4.53033 14.6667 5.56058 14.6667H11.4394C12.4697 14.6667 13.2891 14.1654 14.0249 13.4644C15.5311 12.0294 13.0581 10.8827 12.115 10.3211C9.90321 9.0041 7.09679 9.0041 4.88505 10.3211Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.5 4.33334C11.5 5.9902 10.1569 7.33334 8.5 7.33334C6.84315 7.33334 5.5 5.9902 5.5 4.33334C5.5 2.67649 6.84315 1.33334 8.5 1.33334C10.1569 1.33334 11.5 2.67649 11.5 4.33334Z" stroke="#4D4D4D" stroke-width="1.5"/>
+  </svg>
+</span>
+<span class="count">
+  <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+  </svg>
+</span>
+</div>
+
+<!-- Icono 2 -->
+<div class="icon-box">
+<span class="icon">
+  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.1666 11.3333L1.83325 11.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M15.1666 14L15.1666 8L1.83325 8L1.83325 14" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M10.5 8V6L6.5 6L6.5 8" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M13.8332 8L13.8332 4C12.3226 2.73957 10.4837 2 8.49984 2C6.51597 2 4.67703 2.73957 3.1665 4L3.1665 8" stroke="#4D4D4D" stroke-width="1.5"/>
+  </svg>
+</span>
+<span class="count">
+  <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+  </svg>
+</span>
+</div>
+
+<!-- Icono 3 -->
+<div class="icon-box">
+<span class="icon">
+  <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.83325 2.66662V13.3333L8.83325 14.6666V1.33328L2.83325 2.66662Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M8.83325 2.66663V13.3333H12.1666V2.66663H8.83325Z" stroke="#4D4D4D" stroke-width="1.5"/>
+    <path d="M6.83325 9L6.83325 7" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M12.1665 13.3333L14.1665 13.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M0.833252 13.3333H2.83325" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+  </svg>
+</span>
+<span class="count">
+  <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+  </svg>
+</span>
+</div>
+
+<!-- Icono 4 -->
+<div class="icon-box">
+<span class="icon">
+  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.1665 7.33333L9.1665 7.33333L7.1665 6L1.83317 6" stroke="#4D4D4D" stroke-width="1.5"/>
+    <path d="M3.1665 6L3.1665 10C3.1665 11.4728 4.36041 12.6667 5.83317 12.6667L11.1666 12.6667C12.6393 12.6667 13.8333 11.4727 13.8332 9.99993L13.8332 7.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12.5 12V14M4.5 12V14" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M3.1665 6L3.1665 3C3.1665 2.44772 3.61422 2 4.1665 2C4.71879 2 5.1665 2.44772 5.1665 3V3.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+  </svg>
+</span>
+<span class="count">
+  <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+  </svg>
+</span>
+</div>
+</div>
+        
+        <div class="villa-info">
+          <h3 class="villa-title">Villa Las Calderas</h3>
+          <p class="villa-location">Corralejo</p>
+          <p class="villa-price">170€/noche</p>
+        </div>
+      </div>
+    
+      <!-- Villa 2 -->
+      <div class="villa-card">
+        <div class="villa-image">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Salobre Villa">
+         
+        </div>
+        <div class="info-icons">
+          <div class="icon-box">
+            <span class="icon">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.88505 10.3211C3.94187 10.8827 1.46891 12.0294 2.97511 13.4644C3.71087 14.1654 4.53033 14.6667 5.56058 14.6667H11.4394C12.4697 14.6667 13.2891 14.1654 14.0249 13.4644C15.5311 12.0294 13.0581 10.8827 12.115 10.3211C9.90321 9.0041 7.09679 9.0041 4.88505 10.3211Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 4.33334C11.5 5.9902 10.1569 7.33334 8.5 7.33334C6.84315 7.33334 5.5 5.9902 5.5 4.33334C5.5 2.67649 6.84315 1.33334 8.5 1.33334C10.1569 1.33334 11.5 2.67649 11.5 4.33334Z" stroke="#4D4D4D" stroke-width="1.5"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.1666 11.3333L1.83325 11.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M15.1666 14L15.1666 8L1.83325 8L1.83325 14" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M10.5 8V6L6.5 6L6.5 8" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M13.8332 8L13.8332 4C12.3226 2.73957 10.4837 2 8.49984 2C6.51597 2 4.67703 2.73957 3.1665 4L3.1665 8" stroke="#4D4D4D" stroke-width="1.5"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+              <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.83325 2.66662V13.3333L8.83325 14.6666V1.33328L2.83325 2.66662Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8.83325 2.66663V13.3333H12.1666V2.66663H8.83325Z" stroke="#4D4D4D" stroke-width="1.5"/>
+                <path d="M6.83325 9L6.83325 7" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M12.1665 13.3333L14.1665 13.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M0.833252 13.3333H2.83325" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.1665 7.33333L9.1665 7.33333L7.1665 6L1.83317 6" stroke="#4D4D4D" stroke-width="1.5"/>
+              <path d="M3.1665 6L3.1665 10C3.1665 11.4728 4.36041 12.6667 5.83317 12.6667L11.1666 12.6667C12.6393 12.6667 13.8333 11.4727 13.8332 9.99993L13.8332 7.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.5 12V14M4.5 12V14" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M3.1665 6L3.1665 3C3.1665 2.44772 3.61422 2 4.1665 2C4.71879 2 5.1665 2.44772 5.1665 3V3.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+              </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <h3 class="villa-title">Salobre Villa</h3>
+          <p class="villa-location">San Bartolomé de Tirajana</p>
+          <p class="villa-price">185€/noche</p>
+        </div>
+      </div>
+    
+      <!-- Villa 3 -->
+      <div class="villa-card">
+        <div class="villa-image">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Oasis de Lujo">
+         
+        </div>
+        <div class="info-icons">
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.88505 10.3211C3.94187 10.8827 1.46891 12.0294 2.97511 13.4644C3.71087 14.1654 4.53033 14.6667 5.56058 14.6667H11.4394C12.4697 14.6667 13.2891 14.1654 14.0249 13.4644C15.5311 12.0294 13.0581 10.8827 12.115 10.3211C9.90321 9.0041 7.09679 9.0041 4.88505 10.3211Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 4.33334C11.5 5.9902 10.1569 7.33334 8.5 7.33334C6.84315 7.33334 5.5 5.9902 5.5 4.33334C5.5 2.67649 6.84315 1.33334 8.5 1.33334C10.1569 1.33334 11.5 2.67649 11.5 4.33334Z" stroke="#4D4D4D" stroke-width="1.5"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+              </svg>
+              </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.1666 11.3333L1.83325 11.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M15.1666 14L15.1666 8L1.83325 8L1.83325 14" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M10.5 8V6L6.5 6L6.5 8" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M13.8332 8L13.8332 4C12.3226 2.73957 10.4837 2 8.49984 2C6.51597 2 4.67703 2.73957 3.1665 4L3.1665 8" stroke="#4D4D4D" stroke-width="1.5"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+              </svg>
+              </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.83325 2.66662V13.3333L8.83325 14.6666V1.33328L2.83325 2.66662Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8.83325 2.66663V13.3333H12.1666V2.66663H8.83325Z" stroke="#4D4D4D" stroke-width="1.5"/>
+                <path d="M6.83325 9L6.83325 7" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M12.1665 13.3333L14.1665 13.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M0.833252 13.3333H2.83325" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1665 6.33333L8.1665 6.33333L6.1665 5L0.83317 5" stroke="#4D4D4D" stroke-width="1.5"/>
+                <path d="M2.1665 5L2.1665 9C2.1665 10.4728 3.36041 11.6667 4.83317 11.6667L10.1666 11.6667C11.6393 11.6667 12.8333 10.4727 12.8332 8.99993L12.8332 6.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 11V13M3.5 11V13" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M2.1665 5L2.1665 2C2.1665 1.44772 2.61422 1 3.1665 1C3.71879 1 4.1665 1.44772 4.1665 2V2.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+        </div>
+
+
+
+        <div class="villa-info">
+          <h3 class="villa-title">Impresionante Oasis de Lujo</h3>
+          <p class="villa-location">San Bartolomé de Tirajana</p>
+          <p class="villa-price">1.400€/noche</p>
+        </div>
+      </div>
+    
+      <!-- Villa 4 -->
+      <div class="villa-card">
+        <div class="villa-image">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Villa Corrales">
+         
+        </div>
+        <div class="info-icons">
+          <div class="icon-box">
+            <span class="icon">
+              <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.88505 10.3211C2.94187 10.8827 0.46891 12.0294 1.97511 13.4644C2.71087 14.1654 3.53033 14.6667 4.56058 14.6667H10.4394C11.4697 14.6667 12.2891 14.1654 13.0249 13.4644C14.5311 12.0294 12.0581 10.8827 11.115 10.3211C8.90321 9.0041 6.09679 9.0041 3.88505 10.3211Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.5 4.33334C10.5 5.9902 9.15685 7.33334 7.5 7.33334C5.84315 7.33334 4.5 5.9902 4.5 4.33334C4.5 2.67649 5.84315 1.33334 7.5 1.33334C9.15685 1.33334 10.5 2.67649 10.5 4.33334Z" stroke="#4D4D4D" stroke-width="1.5"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1666 10.3333L0.833252 10.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M14.1666 13L14.1666 7L0.833252 7L0.833252 13" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9.5 7V5L5.5 5L5.5 7" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M12.8332 7L12.8332 3C11.3226 1.73957 9.48371 1 7.49984 1C5.51597 1 3.67703 1.73957 2.1665 3L2.1665 7" stroke="#4D4D4D" stroke-width="1.5"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.83325 2.66662V13.3333L9.83325 14.6666V1.33328L3.83325 2.66662Z" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9.83325 2.66663V13.3333H13.1666V2.66663H9.83325Z" stroke="#4D4D4D" stroke-width="1.5"/>
+                <path d="M7.83325 9L7.83325 7" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M13.1665 13.3333L15.1665 13.3333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M1.83325 13.3333H3.83325" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+          <div class="icon-box">
+            <span class="icon">
+
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.1665 7.33333L9.1665 7.33333L7.1665 6L1.83317 6" stroke="#4D4D4D" stroke-width="1.5"/>
+                <path d="M3.1665 6L3.1665 10C3.1665 11.4728 4.36041 12.6667 5.83317 12.6667L11.1666 12.6667C12.6393 12.6667 13.8333 11.4727 13.8332 9.99993L13.8332 7.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.5 12V14M4.5 12V14" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M3.1665 6L3.1665 3C3.1665 2.44772 3.61422 2 4.1665 2C4.71879 2 5.1665 2.44772 5.1665 3V3.33333" stroke="#4D4D4D" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                
+            </span>
+            <span class="count">
+              <svg width="6" height="3" viewBox="0 0 6 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.214 3.004V0.946H5.058V3.004H0.214Z" fill="#4D4D4D"/>
+                </svg>
+                
+            </span>
+          </div>
+        </div>
+
+
+
+        <div class="villa-info">
+          <h3 class="villa-title">Villa Corrales</h3>
+          <p class="villa-location">Corralejo</p>
+          <p class="villa-price">170€/noche</p>
+        </div>
+      </div>
+    </div>
+    
+    <button class="nav-arrow right-arrow" (click)="scrollRight()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 18L15 12L9 6" stroke="#368F8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+  <!--seccion carrusel -->
+  
+  <!-- boton abajo alojamientos -->
+  <div class="redireccion-alojamientos">
+  <a href="#" class="alojamientos">Ver todos los alojamientos</a>
+    </div>
+  <!-- boton abajo alojamientos -->

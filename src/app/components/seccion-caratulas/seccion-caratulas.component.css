@@ -1,0 +1,109 @@
+.caratula-alquiler {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+   
+  }
+  
+
+  .caratula-alquiler .primer-img {
+    width: 50%;  /* Ocupa la mitad izquierda */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+  background-color: #dafffd;
+  }
+  
+  .caratula-alquiler .segunda-img {
+    width: 50%;  /* Ocupa la mitad derecha */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+  
+    
+  }
+  .segunda-img{
+  
+   
+    object-fit: contain;
+  }
+  
+  .segunda-img img {
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .primer-img .img-grecia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+   
+    -webkit-mask-image: linear-gradient(
+      to bottom, 
+      rgba(0,0,0,0.3) 30%,       /* Parte superior (20%) semitransparente */
+      rgba(0,0,0,1) 20%,        /* Fin del primer degradado */
+      rgba(0,0,0,1) 50%,        /* Mitad de la imagen (color completo) */
+      rgba(0,0,0,0) 100%        /* Se desvanece totalmente al final */
+    );
+    mask-image: linear-gradient(
+      to bottom, 
+      rgba(0,0,0,0.3) 0%,       /* Parte superior (20%) semitransparente */
+      rgba(0,0,0,1) 20%,        /* Fin del primer degradado */
+      rgba(0,0,0,1) 50%,        /* Mitad de la imagen (color completo) */
+      rgba(0,0,0,0) 100%        /* Se desvanece totalmente al final */
+    );
+  }
+  
+.primer-img .texto-superpuesto {
+    margin-left: 34%;
+    margin-top: -200px;
+    text-align: start;
+     transform: translate(-50%, -50%);
+     color: rgb(7, 46, 62);
+     font-size: 34px;
+     text-align: center;
+     font-weight: bold;
+     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+     white-space: pre-line; /* Respeta saltos de línea */
+   }
+   .bienvenido-texto{
+     font-family: 'Outfit', sans-serif;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 1.3;
+     margin-bottom: 8px;
+     margin-right: 50%;
+   }
+   .texto-grecia {
+     font-family: 'Lexend', sans-serif;
+     margin-left: 10%;
+   
+     font-weight: 600;
+     font-size: 96px;
+     line-height: 63px;
+     letter-spacing: -0.02em;
+     color: #003D42;
+     width: 306px;
+     height: 67px;
+   
+   }
+   
+   .alojamientos-texto{
+     font-family: 'Lexend', sans-serif;
+     margin-top: -4%;
+     margin-left: 80%;
+     white-space: nowrap;
+     font-weight: 500;
+     font-size: 16px;
+     text-decoration: underline;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     cursor: pointer;
+     transition: opacity 0.2s ease;
+   }
+   .icono-alojamientos{
+     
+     margin-right: -167%;
+     margin-top: -9%;
+   }
+   
+  

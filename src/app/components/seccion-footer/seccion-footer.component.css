@@ -1,0 +1,145 @@
+.footer {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    color: #003D42;
+    
+  }
+  
+  
+  .footer-top {
+    background: #7EC2B5;
+    padding: 64px 0;
+    
+  }
+  
+  .footer-container {
+    width: 1216px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  /* Logo */
+  .footer-logo h1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 37px;
+    color: #003D42;
+    text-align: start;
+    margin: 0 auto;
+  }
+  
+  /* Columnas del footer */
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+  }
+  
+  .footer-column {
+    width: 186px;
+  }
+  
+  .column-title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1D686E;
+    margin-bottom: 16px;
+  }
+  
+  .column-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .column-links li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #003D42;
+    text-decoration: none;
+  }
+  
+  .column-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Redes sociales */
+  .social-icons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  /* Botones de idioma y moneda */
+  .language-button,
+  .currency-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    width: 100%;
+    border: 1px solid #003D42;
+    border-radius: 99px;
+    background: transparent;
+    color: #003D42;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .language-button::after,
+  .currency-button::after {
+    content: "↓";
+    font-size: 12px;
+  }
+  
+  /* Sección inferior del footer */
+  .footer-bottom {
+    background: #7DC2B5;
+    padding: 32px 0;
+  }
+  
+  .footer-bottom .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid rgba(0, 61, 66, 0.1);
+  }
+  
+  .copyright {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #003D42;
+  }
+  
+  
+  
+  
+  /* estrallas */
+  .star-rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: end;
+  }
+  .star {
+    color: #FFD700; /* Amarillo dorado */
+    font-size: 24px;
+    display: inline-block;
+  }
+  
+  .logos{
+    display:flex ;
+    font-size: 13px;
+    
+  }
+  
+  .logos p{
+    margin-top: 4px;
+    margin-left: 5px;
+  }
